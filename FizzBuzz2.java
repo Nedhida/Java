@@ -6,7 +6,7 @@ public class FizzBuzz2 {
         case 0:
           System.out.print("fizzbuzz ");
           // ↓ switch文から抜け出している。
-          // ないとdefault処理も行なってしまい34 fizzbuzz 35 ...となるらしい（ならなかった...）
+          // ないとその後のcaseやdefault処理も行なってしまい34 fizzbuzz fizz 36 ... などとなる
           break;
         case 5:
         case 10:
@@ -23,7 +23,7 @@ public class FizzBuzz2 {
           System.out.print("buzz ");
           break;
         // ↓ 結果に関係なく行う処理
-        // 書かないとcaseに当てはまる時のみ処理を行うらしい（そんな事なかった...）
+        // 書かないとcaseに当てはまる時のみ処理を行う
         default:
           System.out.print(i + " ");
           break;
